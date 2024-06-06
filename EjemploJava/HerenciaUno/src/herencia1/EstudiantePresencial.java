@@ -44,7 +44,14 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        return nombresEstudiante;
+        String cadena = String.format("Estudiante Presencial: %s "
+                + "%s\nIdentificación: %s\nEdad: %d\nNúmero de Créditos: "
+                + "%d\nCosto Crédito: %.2f\nMatrícula Presencial: %.2f",
+                nombresEstudiante, apellidosEstudiante, 
+                identificacionEstudiante, edadEstudiante, 
+                numeroCreditos, costoCredito, matriculaPresencial);
+        return cadena;
+        
     }
     
 }
